@@ -42,7 +42,7 @@ public class DeviceControllerTable {
 		deviceTableClientName.setCellValueFactory(new PropertyValueFactory<Device, String>("deviceClientName"));
 
 		deviceTableName = new TableColumn<>("Eszköz név");
-		deviceTableName.setMinWidth(50);
+		deviceTableName.setMinWidth(100);
 		deviceTableName.setCellValueFactory(new PropertyValueFactory<Device, String>("deviceName"));
 
 		deviceTabelManufacturer = new TableColumn<>("Gyártó");
@@ -78,11 +78,11 @@ public class DeviceControllerTable {
 		});
 
 		addTableDate = new TableColumn<>("Bejelentés dátuma");
-		addTableDate.setMinWidth(50);
+		addTableDate.setMinWidth(180);
 		addTableDate.setCellValueFactory(new PropertyValueFactory<Device, Date>("deviceAddDate"));
 
 		endTableDate = new TableColumn<>("Határidő dátuma");
-		endTableDate.setMinWidth(50);
+		endTableDate.setMinWidth(180);
 		endTableDate.setCellValueFactory(new PropertyValueFactory<Device, Date>("deviceEndDate"));
 
 		deviceTableAccesssory = new TableColumn<>("Tartozék");

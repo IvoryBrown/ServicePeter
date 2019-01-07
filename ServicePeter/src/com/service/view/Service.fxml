@@ -22,7 +22,7 @@
          <children>
             <SplitPane fx:id="splitPane" dividerPositions="0.09585121602288985" layoutX="242.0" layoutY="301.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <items>
-                <AnchorPane SplitPane.resizableWithParent="false">
+                <AnchorPane stylesheets="@MenuPane.css" SplitPane.resizableWithParent="false">
                      <children>
                         <StackPane fx:id="menuPane" layoutX="-11.0" layoutY="155.0" prefHeight="698.0" prefWidth="189.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
@@ -31,13 +31,13 @@
                         </StackPane>
                      </children>
                   </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #A9A9A9;">
                      <children>
                         <AnchorPane fx:id="homePane" layoutX="291.0" layoutY="267.0" prefHeight="698.0" prefWidth="833.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <HBox layoutX="217.0" layoutY="88.0" prefHeight="56.0" prefWidth="833.0" AnchorPane.bottomAnchor="642.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="3000.0" text="Üdvözöljük a Szervíz nyilvántartóban" textFill="#180fba">
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="3000.0" text="Üdvözöljük a Szervíz nyilvántartóban" textFill="#3333ff">
                                        <font>
                                           <Font name="System Bold" size="37.0" />
                                        </font>
@@ -54,11 +54,11 @@
                                  </children>
                               </HBox>
                            </children></AnchorPane>
-                        <AnchorPane fx:id="clientPane" prefHeight="698.0" prefWidth="833.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane fx:id="clientPane" prefHeight="698.0" prefWidth="833.0" stylesheets="@ClientPane.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <VBox layoutX="51.0" layoutY="66.0" prefHeight="40.0" prefWidth="833.0" AnchorPane.bottomAnchor="658.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label fx:id="clientLabel" alignment="CENTER" prefHeight="39.0" prefWidth="833.0" text="Label">
+                                    <Label fx:id="clientLabel" alignment="CENTER" prefHeight="39.0" prefWidth="833.0">
                                        <font>
                                           <Font size="24.0" />
                                        </font>
@@ -69,7 +69,7 @@
                                  <children>
                                     <VBox layoutX="214.0" layoutY="158.0" prefHeight="218.0" prefWidth="172.0" AnchorPane.bottomAnchor="440.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Név">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Név" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -77,7 +77,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Lakcím">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Lakcím" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -85,7 +85,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Telefonszám">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Telefonszám" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -93,7 +93,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Email">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Email" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -101,7 +101,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Megjegyzés">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="180.0" text="Megjegyzés" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -160,11 +160,11 @@
                                  </children>
                               </AnchorPane>
                            </children></AnchorPane>
-                        <AnchorPane fx:id="newDevicePane" prefHeight="698.0" prefWidth="833.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane fx:id="newDevicePane" prefHeight="698.0" prefWidth="833.0" stylesheets="@NewDevicePane.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <VBox prefHeight="40.0" prefWidth="833.0" AnchorPane.bottomAnchor="658.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label fx:id="newDeviceMessage" alignment="CENTER" prefHeight="39.0" prefWidth="833.0" text="Label">
+                                    <Label fx:id="newDeviceMessage" alignment="CENTER" prefHeight="39.0" prefWidth="833.0">
                                        <font>
                                           <Font size="24.0" />
                                        </font>
@@ -175,7 +175,7 @@
                                  <children>
                                     <VBox layoutX="174.0" layoutY="260.0" prefHeight="363.0" prefWidth="187.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Ügyfél név:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Ügyfél név:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -183,7 +183,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Eszköz:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Eszköz:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -191,7 +191,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Gyártó:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Gyártó:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -199,7 +199,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Serial no.:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Serial no.:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -207,7 +207,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Ügyintéző:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Ügyintéző:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -215,7 +215,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Eszköz Jelszó:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Eszköz Jelszó:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -223,7 +223,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Bejelentés dátum:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Bejelentés dátum:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -231,7 +231,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Határidő dátum:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Határidő dátum:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -243,14 +243,11 @@
                                     </VBox>
                                     <VBox layoutX="196.0" prefHeight="363.0" prefWidth="187.0">
                                        <children>
-                                          <Label fx:id="deviceClientNameLbl" prefHeight="30.0" prefWidth="200.0">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
+                                          <TextField fx:id="deviceClientNameTxt" editable="false" prefHeight="30.0">
                                              <VBox.margin>
-                                                <Insets top="10.0" />
+                                                <Insets top="15.0" />
                                              </VBox.margin>
-                                          </Label>
+                                          </TextField>
                                           <ComboBox fx:id="deviceNameCmb" prefHeight="30.0" prefWidth="200.0">
                                              <VBox.margin>
                                                 <Insets top="10.0" />
@@ -290,7 +287,7 @@
                                     </VBox>
                                     <VBox layoutX="390.0" prefHeight="363.0" prefWidth="187.0">
                                        <children>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Tartozék:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Tartozék:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -298,7 +295,7 @@
                                                 <Insets top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Sérülés:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Sérülés:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -306,7 +303,7 @@
                                                 <Insets top="55.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Hiba Leírás:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Hiba Leírás:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -314,7 +311,7 @@
                                                 <Insets top="60.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Megjegyzés:">
+                                          <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" text="Megjegyzés:" textFill="#3333ff">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -352,11 +349,11 @@
                                  </children>
                               </AnchorPane>
                            </children></AnchorPane>
-                        <AnchorPane fx:id="devicePane" prefHeight="698.0" prefWidth="833.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane fx:id="devicePane" prefHeight="698.0" prefWidth="833.0" stylesheets="@ClientPane.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <VBox prefHeight="40.0" prefWidth="833.0" AnchorPane.bottomAnchor="648.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label fx:id="newDeviceMessage1" alignment="CENTER" prefHeight="39.0" prefWidth="833.0" text="Label">
+                                    <Label fx:id="newDeviceMessage1" alignment="CENTER" prefHeight="39.0" prefWidth="833.0">
                                        <font>
                                           <Font size="24.0" />
                                        </font>

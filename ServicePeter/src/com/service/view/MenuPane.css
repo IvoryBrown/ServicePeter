@@ -1,0 +1,20 @@
+.split-pane{
+    -fx-background-color: #A9A9A9;
+    -fx-background-radius: 10.0;
+}
+
+.tree-view, .tree-cell {
+    -fx-background-color:  #616161;
+    -fx-text-fill: #e6e6ff;
+    -fx-font-size: 15.0;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10.0;
+}
+
+.tree-cell:selected {
+   -fx-background-color: #3333ff;
+    -fx-font-family: "Arial Narrow";
+    -fx-text-fill: white;
+    -fx-font-size: 16.0;
+    -fx-font-weight: bold;
+}

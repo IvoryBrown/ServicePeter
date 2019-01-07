@@ -19,6 +19,7 @@ public class ClientController {
 	private TextField clientNameTxt, clientAddressTxt, clientPhoneTxt, clientMailTxt, clientCommentTxt;
 	private ClientDataBase clientDB = new ClientDataBase();
 	private String info;
+	private String infoStyle;
 
 	private TableView<Client> clientTable;
 	private TableColumn<Client, Integer> clientIdColumn;
@@ -61,16 +62,21 @@ public class ClientController {
 			clientDB.addNewClient(new Client(clientNameTxt.getText(), clientAddressTxt.getText(),
 					clientPhoneTxt.getText(), clientMailTxt.getText(), clientCommentTxt.getText()));
 			info = "Sikeres mentés!";
+			infoStyle="-fx-text-fill: green;";
 			clientTextClear();
 			setTable();
 		} else {
 			info = "Sikertelen mentés!";
+			infoStyle="-fx-text-fill: red;";
 		}
 
 	}
 
 	public String setMessage() {
 		return info;
+	}
+	public String setMessageStyle() {
+		return infoStyle;
 	}
 
 	private void clientTextClear() {

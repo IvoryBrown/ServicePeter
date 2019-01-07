@@ -1,0 +1,86 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: 	#3333ff;
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+}
+
+.button:hover {
+    -fx-text-fill: #3333ff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+   
+}
+
+.text-field:hover{
+	 -fx-background-color:  #e6e6ff;
+}
+
+.date-picker .arrow-button{
+	-fx-background-radius:0.0px ;
+	-fx-background-color: #3333ff;
+}
+
+date-picker .arrow-button .arrow{
+	-fx-background-color: #e6e6ff;
+}
+
+.date-picker .arrow-button:hover .arrow{
+	-fx-background-radius:0.0px ;
+	-fx-background-color: white;
+ }
+ 
+ .date-picker .button {
+	-fx-background-color: #3333ff;
+	-fx-border-color:#3333ff;
+	
+ }
+ 
+ .date-picker .button:hover {
+	-fx-border-color:transparent;
+ }
+ 
+ .date-picker .cell {
+	-fx-background-color: #e6e6ff;
+	-fx-text-fill: #3333ff;
+ }
+ 
+ .date-picker .cell:hover {
+	-fx-background-color: #3333ff;
+	-fx-text-fill: #e6e6ff;
+}
+
+.combo-box .cell{
+    -fx-font-size: 15.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: 	#696969;
+	-fx-font-family: "Arial Narrow";
+}
+
+.combo-box .arrow{
+    -fx-background-color:white;
+}
+
+.combo-box .arrow-button{
+    -fx-background-color:#3333ff;
+}
+
+.combo-box .arrow-button:hover{
+    -fx-background-color:#3333ff;
+}
+
+
+.combo-box-popup .list-view .list-cell{
+    -fx-background-color:  #e6e6ff;
+    -fx-text-fill: #3333ff;
+ }
+.combo-box-popup .list-view .list-cell:hover{
+	-fx-background-color:  #3333ff;
+    -fx-text-fill: white;
+ }
+ 
+.text-area .content:hover {
+    -fx-background-color: #e6e6ff;
+}

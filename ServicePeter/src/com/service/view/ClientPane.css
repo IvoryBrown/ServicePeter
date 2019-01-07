@@ -1,0 +1,56 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: 	#3333ff;
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+}
+
+.button:hover {
+    -fx-text-fill: #3333ff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+   
+}
+
+.text-field:hover{
+	 -fx-background-color:  #e6e6ff;
+}
+
+.table-view {
+	-fx-background-color:  #e6e6ff;
+}
+
+.table-view .column-header-background .label {
+	-fx-background-color:  #3333ff;
+	-fx-font-size: 15.0;
+	-fx-text-fill: white;
+}
+
+.table-view .table-cell {
+	-fx-font-size: 13.0;
+	-fx-font-weight: bold;
+}
+
+.table-view .column-header {
+	-fx-background-color: #3333ff;
+}
+
+.table-view>.virtual-flow>.scroll-bar:vertical, .table-view>.virtual-flow>.scroll-bar:vertical>.track,
+	.table-view>.virtual-flow>.scroll-bar:vertical>.track-background,
+	.table-view>.virtual-flow>.scroll-bar:horizontal, .table-view>.virtual-flow>.scroll-bar:horizontal>.track,
+	.table-view>.virtual-flow>.scroll-bar:horizontal>.track-background {
+	-fx-background-color: transparent;
+}
+
+.table-view>.virtual-flow>.scroll-bar>.increment-button, .table-view>.virtual-flow>.scroll-bar>.decrement-button {
+	-fx-opacity: 0.0;
+}
+
+.table-row-cell{ 
+ -fx-background-color:  #e6e6ff;
+}
+.table-view .filler {
+	-fx-background-color:  #3333ff;
+}

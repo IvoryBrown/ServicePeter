@@ -44,13 +44,14 @@ public class ServiceController implements Initializable {
 	private ClientController clientController = new ClientController();
 
 	@FXML
-	private TextField deviceManufacturerTxt, deviceSnTxt, deviceAdministratorTxt, devicePasswordTxt;
+	private TextField deviceClientNameTxt, deviceManufacturerTxt, deviceSnTxt, deviceAdministratorTxt,
+			devicePasswordTxt;
 	@FXML
 	private TextArea deviceAccesssoryTxt, deviceInjuryTxt, deviceErrorDescriptionTxt, deviceCommentTxt;
 	@FXML
 	private ComboBox<String> deviceNameCmb;
 	@FXML
-	private Label deviceClientNameLbl, newDeviceMessage;
+	private Label newDeviceMessage;
 	@FXML
 	private DatePicker deviceAddDate, deviceEndDate;
 	private DeviceController deviceNewController = new DeviceController();
@@ -108,7 +109,7 @@ public class ServiceController implements Initializable {
 						clientPane.setVisible(false);
 						newDevicePane.setVisible(true);
 						devicePane.setVisible(false);
-						deviceClientNameLbl.setText(ClientController.getClientName());
+						deviceClientNameTxt.setText(ClientController.getClientName());
 						break;
 					case MENU_DEVICE_DEVICE:
 						homePane.setVisible(false);
@@ -131,16 +132,18 @@ public class ServiceController implements Initializable {
 	private void clientSave() {
 		clientController.setClient(clientNameTxt, clientAddressTxt, clientPhoneTxt, clientMailTxt, clientCommentTxt);
 		clientLabel.setText(clientController.setMessage());
-
+		clientLabel.setStyle(clientController.setMessageStyle());
 	}
 
 	@FXML
 	private void deviceSave() {
-		deviceNewController.setDevice(ClientController.getClientId(), deviceManufacturerTxt, deviceSnTxt,
-				deviceAdministratorTxt, devicePasswordTxt, deviceAccesssoryTxt, deviceInjuryTxt,
-				deviceErrorDescriptionTxt, deviceCommentTxt, deviceNameCmb, deviceClientNameLbl, deviceAddDate,
-				deviceEndDate);
+			deviceNewController.setDevice(ClientController.getClientId(), deviceManufacturerTxt, deviceSnTxt,
+					deviceAdministratorTxt, devicePasswordTxt, deviceAccesssoryTxt, deviceInjuryTxt,
+					deviceErrorDescriptionTxt, deviceCommentTxt, deviceNameCmb, deviceClientNameTxt, deviceAddDate,
+					deviceEndDate);
+		
 		newDeviceMessage.setText(deviceNewController.setMessage());
+		newDeviceMessage.setStyle(deviceNewController.setMessageStyle());
 	}
 
 	private void getHomeController() {
